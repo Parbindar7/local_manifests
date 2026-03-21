@@ -1,0 +1,39 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="Builds"
+     fetch="https://github.com/Parbindar7/"
+     revision="lineage-23.2" />
+  <remote name="los"
+     fetch="https://github.com/LineageOS/"
+     revision="lineage-23.2" />
+    <!-- Sync hardware -->
+  <project path="hardware/samsung" name="android_hardware_samsung" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="los" clone-depth="1" /> 
+  <project path="hardware/samsung_slsi-linaro/codec2" name="android_hardware_samsung_slsi-linaro_codec2" remote="los" clone-depth="1" revision="lineage-22.2" />
+  <project path="hardware/samsung_slsi-linaro/config" name="android_hardware_samsung_slsi-linaro_config" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/exynos" name="android_hardware_samsung_slsi-linaro_exynos" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/exynos5" name="android_hardware_samsung_slsi-linaro_exynos5" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/graphics" name="android_hardware_samsung_slsi-linaro_graphics" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/openmax" name="android_hardware_samsung_slsi-linaro_openmax" remote="los" clone-depth="1" />
+  <project path="hardware/samsung_slsi-linaro/interfaces" name="android_hardware_samsung_slsi-linaro_interfaces" remote="los" clone-depth="1" />
+  <!-- Kernel -->
+  <project path="kernel/samsung/universal9611" name="android_kernel_samsung_universal9611" remote="Builds" revision="lineage-23.2" clone-depth="1" />
+  <!-- Devices trees -->
+  <project path="device/samsung/universal9611-common" name="android_device_samsung_universal9611-common" remote="Builds" />
+  <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="los" />
+  <project path="device/samsung/a51" name="android_device_samsung_a51" remote="Builds" />
+  <project path="device/samsung/f41" name="android_device_samsung_f41" remote="Builds" />
+  <project path="device/samsung/m31s" name="android_device_samsung_m31s" remote="Builds" />
+  <project path="device/samsung/m31" name="android_device_samsung_m31" remote="Builds" />
+  <project path="device/samsung/m21" name="android_device_samsung_m21" remote="Builds" />
+  <!-- Vendor trees -->
+  <project path="vendor/samsung/universal9611-common" name="android_vendor_samsung_universal9611-common" remote="Builds" clone-depth="1" />
+  <project path="vendor/samsung/a51" name="android_vendor_samsung_a51" remote="Builds" clone-depth="1" />
+  <project path="vendor/samsung/f41" name="android_vendor_samsung_f41" remote="Builds" clone-depth="1" />
+  <project path="vendor/samsung/m31s" name="android_vendor_samsung_m31s" remote="Builds" clone-depth="1" />
+  <project path="vendor/samsung/m21" name="android_vendor_samsung_m21" remote="Builds" clone-depth="1" />
+  <project path="vendor/samsung/m31" name="android_vendor_samsung_m31" remote="Builds" clone-depth="1" />
+</manifest>
